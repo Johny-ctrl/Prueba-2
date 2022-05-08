@@ -27,7 +27,6 @@ header div a{
 header {
     display: flex;
     min-height: 300px;
-    max-width: 1592;
     background-image:url(../IMG/Perro-comiendo-pasto.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,7 +132,7 @@ button:hover{
 #formulario input{
     width: 600px;
 }
-@media (max-width:720px){
+@media (max-width:900px){
     header{
         flex-direction: column;
         max-height: 350px;
