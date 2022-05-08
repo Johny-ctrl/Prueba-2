@@ -1,0 +1,161 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(230, 230, 230);
+    margin: 0;
+}
+
+/*Header*/
+a {
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: darkgray;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 15px;
+    color: white;
+}
+header div a{
+    color: white;
+    font-size: 1.5rem;
+}
+header {
+    display: flex;
+    min-height: 300px;
+    max-width: 1592;
+    background-image:url(../IMG/Perro-comiendo-pasto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/*Secciones*/
+section div{
+    margin: 50px;
+}
+#carouselExampleInterval{
+    width: 521px;
+    margin: auto;
+}
+#sobrenosotros,#suscribete,#producto,#contacto{
+    margin-top: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+#sobrenosotros{
+    align-items: center;
+}
+/*Suscribete*/
+#suscribete{
+    align-items: center;
+}
+#suscribete div{
+    padding: 30px;
+    width: 33vh;
+}
+/*Contacto*/
+#contacto{
+    align-items: center;
+    background-color: rgb(25, 166, 25);
+    margin-bottom: 0;
+}
+#contacto div{
+    max-width: 500px;
+    margin: 0%;
+    padding: 50px;
+}
+#contacto img{
+    max-width: 40px;
+    padding: 8px;
+}
+.numero{
+    justify-content: space-between;
+    display: flex;
+}
+/*Producto*/
+#producto{
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../IMG/FondoA.jpg);
+    background-size: cover;
+    overflow-x: auto;
+}
+#producto div{
+    background-color: rgb(221, 221, 221);
+}
+/*Centrar*/
+#producto .center{
+    border: 1px rgb(0, 0, 0);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.center{
+    padding: 50px;
+    padding-bottom: 0;
+    text-align: center;
+}
+#producto button{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+/*Botones*/
+button{
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    height: 40px;
+    width: 150px;
+    color: white;
+    background-color: blueviolet;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 600px;
+    background-image:url(../IMG/94117809-pequeño-gatito-rayado-que-grita-en-la-hierba.webp) ;
+    background-repeat: no-repeat;
+}
+#formulario input{
+    width: 600px;
+}
+@media (max-width:720px){
+    header{
+        flex-direction: column;
+        max-height: 350px;
+    }
+    nav{
+        padding: 70px 0px;
+    }
+    #sobrenosotros,#producto,#suscribete,#contacto{
+        flex-direction: column;
+    }
+    #producto{
+        align-items: center;
+        background-image:  linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url();
+        background-size: cover; 
+    }
+    #producto div{
+        background-color: rgb(221, 221, 221);
+        max-width: 200px;
+    }
+}
