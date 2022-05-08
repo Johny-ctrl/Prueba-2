@@ -39,10 +39,7 @@ header {
 section div{
     margin: 50px;
 }
-#carouselExampleInterval{
-    width: 521px;
-    margin: auto;
-}
+
 #sobrenosotros,#suscribete,#producto,#contacto{
     margin-top: 70px;
     display: flex;
@@ -159,7 +156,23 @@ button:hover{
     }
 }
 /*carrucel*/
-img{
-    width: 521px;
+.carousel-inner img{
+    width: 1000px;
+    height: 500px;
+}
+#carouselExampleControls{
+    width: 500px;
     margin: auto;
 }
+.carousel-control-prev{
+    width: 45%;
+}
+.carousel-control-next, .carousel-control-prev{
+    height: 10%;
+    margin: auto;
+    box-shadow: none;
+    margin-right: -125px;
+    margin-left: -125px;
+    color: black;
+}
+
