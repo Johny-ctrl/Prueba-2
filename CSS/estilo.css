@@ -15,14 +15,19 @@ a {
 nav a:hover{
     color: darkgray;
 }
+header div a:hover{
+    color: white;
+}
 nav a{
     font-weight: 600;
     padding-right: 15px;
     color: white;
+    text-decoration: none;
 }
 header div a{
     color: white;
     font-size: 1.5rem;
+    text-decoration: none;
 }
 header {
     display: flex;
@@ -40,7 +45,7 @@ section div{
     margin: 50px;
 }
 
-#sobrenosotros,#suscribete,#producto,#contacto{
+#sobrenosotros,#suscribete,#producto{
     margin-top: 70px;
     display: flex;
     text-align: center;
@@ -59,6 +64,9 @@ section div{
 }
 /*Contacto*/
 #contacto{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
     align-items: center;
     background-color: rgb(25, 166, 25);
     margin-bottom: 0;
@@ -70,11 +78,12 @@ section div{
 }
 #contacto img{
     max-width: 40px;
-    padding: 8px;
+    padding: auto;
 }
 .numero{
     justify-content: space-between;
     display: flex;
+    padding: auto;
 }
 /*Producto*/
 #producto{
@@ -89,6 +98,7 @@ section div{
 }
 #producto div{
     background-color: rgb(221, 221, 221);
+    height: 350px;
 }
 /*Centrar*/
 #producto .center{
@@ -97,7 +107,7 @@ section div{
     border-radius: 10px;
 }
 .center{
-    padding: 50px;
+    padding: 10px;
     padding-bottom: 0;
     text-align: center;
 }
@@ -129,7 +139,7 @@ button:hover{
 #formulario input{
     width: 600px;
 }
-@media (max-width:900px){
+@media (max-width:1010px){
     header{
         flex-direction: column;
         max-height: 350px;
@@ -153,6 +163,64 @@ button:hover{
     #producto div{
         background-color: rgb(221, 221, 221);
         max-width: 200px;
+    }
+    #datos{
+        display: flex;
+        flex-direction: column;
+    }
+    #datos{
+        max-width: 90vh;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    .order-form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-left: 35px;
+    }
+    .col{
+        padding-top: 10px;
+        padding-left: auto;
+        padding-right: auto;
+        padding-bottom: 5px;
+    }
+    #datos div{
+        margin: 0%;
+        width: 75vh;
+    }
+    .order{
+        flex-direction: column;
+        display: flex;
+
+    }
+    .col input, .col .form-select{
+        width: 70vh;
+    }
+
+}
+@media (max-width:780px){
+    #datos{
+        max-width: 50vh;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    .order-form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 0%;
+    }
+    .order{
+        flex-direction: column;
+        margin: auto;
+        display: flex;
+    }
+    .col input, .col .form-select{
+        max-width: 43vh;
+    }
+    #button-form{
+        max-width: 50vh;
     }
 }
 /*carrucel*/
@@ -205,29 +273,72 @@ button:hover{
     align-items: center;
     margin: auto;
 }
+.tamaño{
+    border-radius: 15px;
+    padding: 20px;
+}
 
 #datos{
     flex-wrap: wrap;
+    border-radius: 15px;
+    padding: 20px;
 }
-    
 #titulo{
     text-align: center;
 }
 #datos{
     border: 1px solid rgb(0, 0, 0);
     margin: auto;
-    width: 1000px;
+    width: 900px;
     height: auto;
     min-width: 300px;
-    margin-bottom: 0px;
-    background-image: url(/IMG/94117809-pequeño-gatito-rayado-que-grita-en-la-hierba.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+    justify-content: space-between;
+    background-color: rgb(230,230,230);
 }
-.col, .form-floating , .form-check{
+#button-form{
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+    margin: auto;
+}
+#button-form button{
+    border-radius: 10px;
+}
+#titulo{
+    margin: 0%;
+    padding: 50px;
+}
+.col{
     margin: 10px;
-    flex-wrap: wrap;
-   margin-bottom: 0px;
-   min-width: 300px;
+    max-width: 400px;
+}
+.order-form{
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    min-width: 400px;
+}
+.order{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#f-b{
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../IMG/vector-wildlife-animals-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px;
+}
+#titulo h2{
+    color: white;
+}
+.center img{
+    max-height: 20vh;
+    max-width: 20vh;
+
 }

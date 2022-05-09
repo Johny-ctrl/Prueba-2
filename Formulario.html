@@ -22,15 +22,16 @@
     </nav>
 </header>
 <body>
+    <section id="f-b">
     <div id="titulo">
-        <h3>
+        <h2>
             Suscripcion
-        </h3>
+        </h2>
     </div>
-    <div id="datos">
+    <section id="datos">
         <form action="data.html" enctype="multipart/form-data" method="get" name="suscripcion">
-            <div class="mb-3">
-                <div class="row">
+            <div class="order">
+                <div class="order-form">
                     <div class="col">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su nombre">
@@ -39,10 +40,6 @@
                         <label for="apellido" class="form-label">Apellido</label>
                         <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ingrese apellido">
                     </div>
-                </div>
-            </div>
-            <div class="mb-3">
-                <div class="row">
                     <div class="col">
                         <label for="correo" class="form-label">Correo Electronico</label>
                         <input type="email" class="form-control" name="correo" id="correo" placeholder="Ingrese su correo Electronico">
@@ -54,41 +51,41 @@
                         </select>
                     </div>
                 </div>
-            </div>
-            <div class="mb-3">
-                <div class="row">
+                <div class="order-form">
                     <div class="col">
                         <label for="contraseña" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" name="contraseña" id="contraseña" placeholder="Ingrese contraseña">
                     </div>
                     <div class="col">
-                        <label for="Rcontraseña" class="form-label">Repita Contraseña</label>
+                        <label for="Rcontraseña" class="form-label">Repita la contraseña</label>
                         <input type="password" class="form-control" name="Rcontraseña" id="Rcontraseña" placeholder="Repita su Contraseña">
+                    </div>
+                    <div class="col">
+                        <label for="direccion" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Escriba su direccion">
                     </div>
                 </div>
             </div>
-            <div class="mb-3 col">
-                <label for="direccion" class="form-label">Direcciom</label>
-                <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Escriba su direccion">
-             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Al hacer chekear acepta los terminos!
-                </label>
-              </div>
-            <button type="button">Continuar</button>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Al hacer check acepta los terminos!
+                    </label>
+                </div>
+            <div id="button-form">
+                <button type="button">Continuar</button>
+            </div>
         </form>
-    </div>
- 
+    </section>
+    </section>
     <section id="contacto">
         <div>
             <p>
                 ¿tienes dudas o quieres preguntar por algún producto? ¡Puedes contactarte con nosotros en estos números o en nuestras redes sociales!
             </p>
             <section class="numero">
-                <div>+569-32823020</div>
-                <div>+569-31288037</div>
+                <div>+56932823020</div>
+                <div>+56931288037</div>
             </section>
         </div>
         <div>
