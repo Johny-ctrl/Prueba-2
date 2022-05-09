@@ -156,23 +156,78 @@ button:hover{
     }
 }
 /*carrucel*/
-.carousel-inner img{
-    width: 1000px;
-    height: 500px;
-}
-#carouselExampleControls{
-    width: 500px;
+.carousel-inner{
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    max-height: 600px;
     margin: auto;
 }
+#carouselExampleControls{
+    width: 90vh;
+    margin: auto;
+    
+}
 .carousel-control-prev{
-    width: 45%;
+    width: auto;
+}
+.carousel-item {
+    text-align: center;
+    
 }
 .carousel-control-next, .carousel-control-prev{
     height: 10%;
     margin: auto;
     box-shadow: none;
-    margin-right: -125px;
-    margin-left: -125px;
+    margin-right: -10px;
+    margin-left: -10px;
     color: black;
 }
 
+.tamaño{  
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0 0.1rem 0.4rem gray;
+    width: 90%;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.cuadrito{
+    box-shadow: 0 0.1rem 0.4rem gray;
+    padding: 2px;
+    background-color: darkgray;
+}
+.Tabla{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#datos{
+    flex-wrap: wrap;
+}
+    
+#titulo{
+    text-align: center;
+}
+#datos{
+    border: 1px solid rgb(0, 0, 0);
+    margin: auto;
+    width: 1000px;
+    height: auto;
+    min-width: 300px;
+    margin-bottom: 0px;
+    background-image: url(/IMG/94117809-pequeño-gatito-rayado-que-grita-en-la-hierba.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.col, .form-floating , .form-check{
+    margin: 10px;
+    flex-wrap: wrap;
+   margin-bottom: 0px;
+   min-width: 300px;
+}
