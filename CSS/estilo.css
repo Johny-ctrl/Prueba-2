@@ -176,3 +176,24 @@ button:hover{
     color: black;
 }
 
+.tamaño{  
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0 0.1rem 0.4rem gray;
+    width: 90%;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.cuadrito{
+    box-shadow: 0 0.1rem 0.4rem gray;
+    padding: 2px;
+    background-color: darkgray;
+}
+.Tabla{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
